@@ -1,0 +1,40 @@
+{
+  "mapOpts": {
+    "minZoom": 5,
+    "defaultZoom": 5,
+    "maxZoom": 17,
+    "centerPoint": [12099117,4265517],
+    "restrictedExtent": [
+      5013366.366431,
+      396293.14491343,
+      1.7914393445139E7,
+      8282148.4790384
+    ],
+    "projection": "EPSG:102100"
+  },
+  "vectorLayer": [
+    {
+      "layerName": "chinaGaodeVectorDemo",
+      "layerType": "NPMapLib.Layers.GaoDeLayer",
+      "layerOpt": {
+        "url": [
+          "http://webrd01.is.autonavi.com/appmaptile??lang=zh_cn&size=1&scale=1&style=7",
+          "http://webrd02.is.autonavi.com/appmaptile??lang=zh_cn&size=1&scale=1&style=7",
+          "http://webrd03.is.autonavi.com/appmaptile??lang=zh_cn&size=1&scale=1&style=7",
+          "http://webrd04.is.autonavi.com/appmaptile??lang=zh_cn&size=1&scale=1&style=7"
+        ],
+        "isBaseLayer": true
+      }
+    },
+    {
+      "layerName": "chinaGaodeVectorDemo2",
+      "layerType": "NPMapLib.Layers.GaoDeLayer",
+      "layerOpt": {
+        "url": [
+          "http://127.0.0.1:8088/tmap/arcgis/services/bb/MapServer/tile/${z}/${y}/${x}"
+        ],
+        "isBaseLayer": false
+      }
+    }],
+  "sattilateLayer": []
+}
